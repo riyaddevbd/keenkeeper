@@ -1,6 +1,6 @@
-# KeenKeeper (JSX Edition) 🐣
+# KeenKeeper 
 
-KeenKeeper is a modern personal relationship management (PRM) application designed to help you maintain and nurture your most important connections. This version is built using standard React `.jsx` file extensions.
+KeenKeeper is a modern personal relationship management (PRM) application designed to help you maintain and nurture your most important connections.
 
 ## 🚀 Technologies Used
 
