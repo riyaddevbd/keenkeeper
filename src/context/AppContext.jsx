@@ -20,8 +20,19 @@ export function AppProvider({ children }) {
     setTimeline((prev) => [entry, ...prev]);
   };
 
+  const getInteractionsThisMonth = () => {
+    const now = new Date();
+    const currentMonth = now.getMonth();
+    const currentYear = now.getFullYear();
+
+    return timeline.filter((entry) => {
+      const entryDate = new Date(entry.timestamp);
+      return entryDate.getMonth() === currentMonth && entryDate.getFullYear() === currentYear;
+    }).length;
+  };
+
   return (
-    <AppContext.Provider value={{ friends, timeline, loading, addTimelineEntry }}>
+    <AppContext.Provider value={{ friends, timeline, loading, addTimelineEntry, getInteractionsThisMonth }}>
       {children}
     </AppContext.Provider>
   );

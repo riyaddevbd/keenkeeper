@@ -36,7 +36,7 @@ const FriendCard = ({ friend }) => {
 };
 
 export default function HomePage() {
-  const { friends, loading } = useAppContext();
+  const { friends, loading, getInteractionsThisMonth } = useAppContext();
 
   if (loading) {
     return (
@@ -51,7 +51,7 @@ export default function HomePage() {
     { label: "Total Friends", value: friends.length },
     { label: "On Track", value: friends.filter(f => f.status === "on-track").length },
     { label: "Need Attention", value: friends.filter(f => f.status !== "on-track").length },
-    { label: "Interactions This Month", value: "12" },
+    { label: "Interactions This Month", value: getInteractionsThisMonth() },
   ];
 
   return (
