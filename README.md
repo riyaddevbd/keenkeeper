@@ -17,6 +17,9 @@ KeenKeeper is a modern personal relationship management (PRM) application design
 - **👫 Smart Tracking:** Each friend card dynamically highlights their contact status ("on-track", "almost due", or "overdue").
 - **⚡ Instant Interaction Logging:** Quick check-in buttons in the friend detail view with real-time feedback.
 - **📜 Interaction Timeline:** A comprehensive, filterable history of all your social interactions.
+- **📈 Dynamic Interaction Counter:** The "Interactions This Month" card on the home page updates automatically when you log calls, texts, or video calls with friends from the detail page.
+
+
 
 ## 🛠️ Getting Started
 
