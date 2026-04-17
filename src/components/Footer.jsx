@@ -1,4 +1,5 @@
-import { Heart, Mail, MessageCircle, Globe } from "lucide-react";
+import { Globe } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -13,13 +14,13 @@ const Footer = () => {
           <p className="text-sm font-semibold mb-4 text-slate-400">Social Links</p>
           <div className="flex justify-center gap-4">
             <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
-              <Heart size={20} />
+              <Image src="/assets/icons/instagram.png" alt="Instagram" width={20} height={20} />
             </a>
             <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
-              <MessageCircle size={20} />
+              <Image src="/assets/icons/facebook.png" alt="Facebook" width={20} height={20} />
             </a>
             <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
-              <Mail size={20} />
+              <Image src="/assets/icons/twitter.png" alt="Twitter" width={20} height={20} />
             </a>
             <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
               <Globe size={20} />
